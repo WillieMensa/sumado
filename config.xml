@@ -20,5 +20,6 @@
   </author>
 
   <platform name="android" />
+	<icon src="icon.png" />
 
 </widget>
