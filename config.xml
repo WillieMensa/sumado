@@ -21,5 +21,6 @@
 
   <platform name="android" />
 	<icon src="icon.png" />
+	<splash src="splash.png" />
 
 </widget>
