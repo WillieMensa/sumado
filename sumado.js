@@ -15,7 +15,7 @@ var	LIMITE_TABLERO = 450,
 	RENDERER_H = 520,
 	FONDO_AYUDA = 0x008cff,
 	FONDO_JUEGO = "0xffffff",
-	VERSION	= "1.0",
+	VERSION	= "1.1",
 	DEBUG = false;
 
 var Container = PIXI.Container,
@@ -205,25 +205,15 @@ function PantallaInicio() {
 
 	//------------------------------------------------------------
 	//	AGREGO LOGO OMENSA
-		var texture = PIXI.Texture.fromImage('images/mensa.png');
+		var texture = PIXI.Texture.fromImage('images/tierra.png');
 
-		var logomensa = new PIXI.Sprite(texture);
-		logomensa.x = RENDERER_W / 2;
-		logomensa.y = RENDERER_H / 2;
-		logomensa.anchor.set(0.5);
-
-		//	container.addChild(logomensa);
-		//	EscenaMenuInic.stage.interactive = true;
-
-		//	var graphics = new PIXI.Graphics();
-
-		// set a fill and line style again
-		//	graphics.lineStyle(10, 0xFF0000, 0.8);
-		//	graphics.beginFill(0xFF700B, 1);
-
+		var img_tierra = new PIXI.Sprite(texture);
+		img_tierra.x = RENDERER_W / 2;
+		img_tierra.y = RENDERER_H / 2;
+		img_tierra.anchor.set(0.5);
 
 		// let's create a moving shape
-		EscenaMenuInic.addChild(logomensa);
+		EscenaMenuInic.addChild(img_tierra);
 		var count = 0;
 		//	EscenaMenuInic.ticker.add(function() {
 		//	renderer.ticker.add(function() {
@@ -231,10 +221,10 @@ function PantallaInicio() {
 		PIXI.ticker.shared.add(function() {
 			count += 0.03;
 			//	inflar y desinflar el logo
-			logomensa.scale.set(1 + Math.cos(count) * 0.2);
-			//	oscilar horizontalmente
-			logomensa.x = RENDERER_W * ( 0.5 + Math.sin(count) * 0.3);
-			logomensa.y = RENDERER_H * ( 0.6 + Math.cos(count) * 0.1);
+			img_tierra.scale.set(1 + Math.cos(count) * 0.2);
+			//	oscilar horizontal y verticalmente
+			img_tierra.x = RENDERER_W * ( 0.5 + Math.sin(count) * 0.3);
+			img_tierra.y = RENDERER_H * ( 0.6 + Math.cos(count) * 0.1);
 		});
 
 //------------------------------------------------------------
