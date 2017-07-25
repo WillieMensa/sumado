@@ -1,10 +1,10 @@
-# SUMADO
+# SUMADO. A logic game.
 by Willie Verger
 
 ## Based in Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
 
 ## Description
-SUMADO is a logic game. It is an opportunity for mental exercise and fun at the same time.
+SUMADO is a logic game. It's an opportunity for mental exercise and fun at the same time.
 
 ### What does it consist of?
 There is a set of circles joined by lines that form squares and triangles.
@@ -53,11 +53,23 @@ Another good resource for generating a good CSP declaration is [CSP is Awesome][
 [csp-is-awesome]: http://cspisawesome.com
 
 ### Spanish
+
+## Título
+# SUMADO. Un juego de lógica.
+
 ## Descripción
-SUMADO es un juego de lógica.  Es una oportunidad de ejercicio mental y diversión al mismo tiempo.
+SUMADO es un juego de lógica.  Una oportunidad de ejercicio mental y diversión al mismo tiempo.
 ### ¿En que consiste?
 Hay un conjunto de círculos unidos por líneas que forman cuadrados y triángulos. 
 En los círculos o vértices de cada figura se ha asignado un número diferente entre uno y nueve.
+En cada figura se muestra la suma resultante de los correspondientes vértices.  
+El objeto del juego es deducir los valores asignados a cada círculo.  Se da como ayuda los valores de dos vértices.
+
+#### Descripción breve
+Un juego de lógica, aritmética, ejercicio mental y diversión al mismo tiempo.
+### ¿En que consiste?
+
+Hay un conjunto de círculos unidos por líneas que forman cuadrados y triángulos. En los círculos o vértices de cada figura se ha asignado un número diferente entre uno y nueve.
 En cada figura se muestra la suma resultante de los correspondientes vértices.  
 El objeto del juego es deducir los valores asignados a cada círculo.  Se da como ayuda los valores de dos vértices.
 
@@ -82,7 +94,14 @@ juegos, lógica, entretenimiento, recreación matemática, aritmética.
 Parecidos  similares
 Este entretenimiento algunas características del SU-DO-KU y las pirámides numéricas. Por la dificultad para resolver es más simple que el primero y más complicado de resolver que las últimas. 
 
+
 Espero disfruten estos entretenimientos.
+
+### Virtudes
+Un desafío simple que puede ser resuelto con conocimientos básicos de aritmética y razonando lógicamente.
+Permite afianzar conocimientos de matemática básica y agilizar la mente de quienes lo practican.
+
+Clasificación de la aplicación: para todos los públicos.
 
 
 App ID

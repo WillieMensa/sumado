@@ -15,8 +15,9 @@ var	LIMITE_TABLERO = 450,
 	RENDERER_H = 520,
 	FONDO_AYUDA = 0x008cff,
 	FONDO_JUEGO = "0xffffff",
-	VERSION	= "1.1",
+	VERSION	= "1.1.1",
 	DEBUG = false;
+	//	DEBUG = true;
 
 var Container = PIXI.Container,
     autoDetectRenderer = PIXI.autoDetectRenderer,
@@ -187,47 +188,23 @@ function PantallaInicio() {
 	spritesumado.scale.set(1.0);
 	EscenaMenuInic.addChild(spritesumado);
 
-	//	MessExtra = new Text( "Vamos a sumar...!", style );
-	var MessExtra = new Text( 'Vamos a sumar...!',   { fontFamily: "Sriracha", fontSize: "32px", fill:"blue"} ) ;
-	//	MessExtra.position.set(10,10);
-	var MessExtra2 = new Text( 'Vamos a sumar...!',   { fontFamily: "Luckiest Guy", fontSize: "32px", fill:"blue"} ) ;
-	//	MessExtra2.position.set(10,10);
-	if (DEBUG)
-	{
-		MessExtra.position.set(10,10);
-		MessExtra2.position.set(310,10);
-	} else { 
-		MessExtra.position.set(10, LINEA_BOTONES_OFF );
-		MessExtra2.position.set(310, LINEA_BOTONES_OFF );
-	}
-	EscenaMenuInic.addChild(MessExtra);
-	EscenaMenuInic.addChild(MessExtra2);
+	//-------------------------------
+	var richText = new Text(
+		'Juego desafio de lógica y aritmética \n\n' + 
+		'   Willie Verger Juegos de Ingenio\n\n' +
+		'\n', { fontFamily: "Sriracha",	fontSize: "32px", fill: "0x020"  } );
+		/*
+		'\n' , { fontFamily: "Delius",	fontSize: "32px", fill: "0x004400"  } );
+		font-family:'Lobster', arial, serif;
+		font-size:48px;
+		*/
+
+	//	'Se dan como ayuda los valores de dos vértices.', style);
+	richText.x = 100;
+	richText.y = 220;
+	EscenaMenuInic.addChild(richText);
 
 	//------------------------------------------------------------
-	//	AGREGO LOGO OMENSA
-		var texture = PIXI.Texture.fromImage('images/tierra.png');
-
-		var img_tierra = new PIXI.Sprite(texture);
-		img_tierra.x = RENDERER_W / 2;
-		img_tierra.y = RENDERER_H / 2;
-		img_tierra.anchor.set(0.5);
-
-		// let's create a moving shape
-		EscenaMenuInic.addChild(img_tierra);
-		var count = 0;
-		//	EscenaMenuInic.ticker.add(function() {
-		//	renderer.ticker.add(function() {
-		//	PIXI.ticker.add(function() {
-		PIXI.ticker.shared.add(function() {
-			count += 0.03;
-			//	inflar y desinflar el logo
-			img_tierra.scale.set(1 + Math.cos(count) * 0.2);
-			//	oscilar horizontal y verticalmente
-			img_tierra.x = RENDERER_W * ( 0.5 + Math.sin(count) * 0.3);
-			img_tierra.y = RENDERER_H * ( 0.6 + Math.cos(count) * 0.1);
-		});
-
-//------------------------------------------------------------
 
 }
 
@@ -857,9 +834,9 @@ function PantallaSobre() {
 
 	EscenaSobre.addChild(graphics);
 
-	var richText = new Text('Sobre SU-MA-DO version ' + VERSION + '\n' +
+	var richText = new Text('Sobre SUMADO version ' + VERSION + '\n' +
 		'Es un juego desafio desarrollado por \n' +
-		'Willie Verger\n\n' +
+		'Willie Verger Juegos de Ingenio\n\n' +
 		'Soporte: info@ingverger.com.ar\n' +
 		'Web: ingverger.com.ar\n' +
 		'\n' , { fontFamily: "Sriracha",	fontSize: "32px", fill: "0xffffcc"  } );
