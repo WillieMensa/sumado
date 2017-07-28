@@ -77,7 +77,6 @@ var aNumeros = [],		//	array con los numeros
 	EscenaMenuInic = undefined,			//	container pantalla de inicio
 	EscenarioGral = undefined,			//	container del total (1er nivel)
 	id = undefined,
-	MessageFin = undefined,
 	//	MessExtra = undefined,
 	numTexture = undefined,
 	nVertice = undefined,
@@ -159,16 +158,12 @@ function setup() {
 	EscenaDeAyudas.visible = true;
 	EscenaSobre.visible = false;
 
-	var style = {
-		fontFamily: 'Luckiest Guy',
-		//	fontFamily: "Sriracha",	
-		fontSize: "32px", 
-		fill: "#600" } ;
-
-		MessageFin = new Text( "Solución correcta.\nFelicitaciones!", style	);	
-
-		MessageFin.position.set(250, 420 );
+	var	MessageFin = new Text( "Solución correcta.\nFelicitaciones!", 
+		{ fontFamily: "Sriracha",	fontSize: "32px", fill: "#600" });	
+		MessageFin.x = 250;
+		MessageFin.y = 420;
 		EscenaFinJuego.addChild(MessageFin);
+
 	//	detectar y procesar teclas pulsadas mediante 'keydown' event listener en el document
 	document.addEventListener('keydown', onKeyDown);
 	//Start the game loop
@@ -190,14 +185,8 @@ function PantallaInicio() {
 
 	//-------------------------------
 	var richText = new Text(
-		'Juego desafio de lógica y aritmética \n\n' + 
-		'   Willie Verger Juegos de Ingenio\n\n' +
-		'\n', { fontFamily: "Sriracha",	fontSize: "32px", fill: "0x020"  } );
-		/*
-		'\n' , { fontFamily: "Delius",	fontSize: "32px", fill: "0x004400"  } );
-		font-family:'Lobster', arial, serif;
-		font-size:48px;
-		*/
+		'Juego desafio de lógica y aritmética', 
+		{ fontFamily: "Sriracha",	fontSize: "32px", fill: "0x020"  } );
 
 	//	'Se dan como ayuda los valores de dos vértices.', style);
 	richText.x = 100;
