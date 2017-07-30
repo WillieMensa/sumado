@@ -103,6 +103,8 @@ Permite afianzar conocimientos de matemática básica y agilizar la mente de quien
 
 Clasificación de la aplicación: para todos los públicos.
 
+Tu video saldrá en directo en: https://youtu.be/8RfLuiR2PW0
+https://youtu.be/8RfLuiR2PW0
 
 App ID
 2706674
