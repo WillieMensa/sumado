@@ -115,3 +115,6 @@ ingverger@gmail.com
 PhoneGap (iOS / Android / Windows)
 cli-6.5.0 (4.3.1 / 6.1.2 / 4.4.3)
 
+Vinculo para habilitar la versión con los verificadores.
+https://play.google.com/store/apps/details?id=ar.com.ingverger.sumado
+
