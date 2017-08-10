@@ -1,6 +1,7 @@
 /*	
 	menu.js
-	version de trabajo
+	8/8/2017	vers 1.2.0
+
 	11/7/2017	vers 1.0
 */
 
@@ -12,10 +13,10 @@ var	LIMITE_TABLERO = 450,
 	LINEA_BOTONES = 470,
 	LINEA_BOTONES_OFF = 700,
 	RENDERER_W = 680,
-	RENDERER_H = 520,
+	RENDERER_H = 680,
 	FONDO_AYUDA = 0x008cff,
 	FONDO_JUEGO = "0xffffff",
-	VERSION	= "1.1.2",
+	VERSION	= "1.3.0",
 	DEBUG = false;
 	//	DEBUG = true;
 
@@ -54,7 +55,7 @@ renderer.view.style.left = "0px";
 
 
 //	Set the canvas's border style and background color
-renderer.view.style.border = "5px solid #888";
+renderer.view.style.border = "01px solid #0f0";
 renderer.backgroundColor = FONDO_JUEGO;
 
 
@@ -77,7 +78,6 @@ var aNumeros = [],		//	array con los numeros
 	EscenaMenuInic = undefined,			//	container pantalla de inicio
 	EscenarioGral = undefined,			//	container del total (1er nivel)
 	id = undefined,
-	//	MessExtra = undefined,
 	numTexture = undefined,
 	nVertice = undefined,
 	pointer = undefined,
@@ -183,7 +183,6 @@ function PantallaInicio() {
 	spritesumado.scale.set(1.0);
 	EscenaMenuInic.addChild(spritesumado);
 
-	//-------------------------------
 	var richText = new Text(
 		'Juego desafio de lógica y aritmética', 
 		{ fontFamily: "Sriracha",	fontSize: "32px", fill: "0x020"  } );
@@ -192,8 +191,6 @@ function PantallaInicio() {
 	richText.x = 100;
 	richText.y = 220;
 	EscenaMenuInic.addChild(richText);
-
-	//------------------------------------------------------------
 
 }
 
@@ -218,16 +215,12 @@ function play() {
 	} else {
 		elapsed = Math.floor(( new Date().getTime() - start ) / 100 ) / 10;
 	}
-
 	Crono.text = "Tiempo: " + elapsed + " seg.";
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////
-
 //	solamente para depurar
 function DibujaGrilla() {
-
-	
 	for (var i = 0; i < 18; i++)
 	{
 		//	lineas horizontales
@@ -238,7 +231,7 @@ function DibujaGrilla() {
 		line.x = 0;
 		line.y = ( 50 * i ) + 25 ;
 		EscenarioGral.addChild(line);
-		//	var line = new PIXI.Graphics();
+		//	lineas verticales
 		line = new PIXI.Graphics();
 		line.lineStyle(1, "#ace", 0.5);
 		line.moveTo(0, 0);
@@ -247,14 +240,11 @@ function DibujaGrilla() {
 		line.y = 0;
 		EscenarioGral.addChild(line);
 	}
-
 }
 
 
 function PantallaAyuda() {
-//		var marco = new PIXI.Graphics();
 	var graphics = new PIXI.Graphics();
-
 	// draw a rounded rectangle
 	graphics.lineStyle(4, 0x332211, 0.95)
 	graphics.beginFill( FONDO_AYUDA, 0.95);
@@ -263,24 +253,22 @@ function PantallaAyuda() {
 
 	EscenaDeAyudas.addChild(graphics);
 
-var style = {
-	fontSize: "32px",
-    fontFamily: 'Sriracha',
-    fontStyle: 'italic',
-    fontWeight: 'light',
-    fill: '#ffffff',
-    stroke: '#4a1850',
-    strokeThickness: 1,
-    dropShadow: false,
-    dropShadowColor: '#000000',
-    dropShadowBlur: 4,
-    dropShadowAngle: Math.PI / 6,
-    dropShadowDistance: 6,
-    wordWrap: true,
-    wordWrapWidth: 570
-};
-
-
+	var style = {
+		fontSize: "32px",
+		fontFamily: 'Sriracha',
+		fontStyle: 'italic',
+		fontWeight: 'light',
+		fill: '#ffffff',
+		stroke: '#4a1850',
+		strokeThickness: 1,
+		dropShadow: false,
+		dropShadowColor: '#000000',
+		dropShadowBlur: 4,
+		dropShadowAngle: Math.PI / 6,
+		dropShadowDistance: 6,
+		wordWrap: true,
+		wordWrapWidth: 570
+	};
 	var richText = new Text('¿Qué es?\n' +
 		'SU-MA-DO es un desafío de lógica que requiere un \n' + 
 		'mínimo conocimiento de aritmética para ser resuelto.\n' + 
@@ -332,10 +320,9 @@ function PantallaJugar() {
 	tablero.scale.set(1.00);
 	EscenaDeJuego.addChild(tablero);
 
-	Crono = new Text( "Tiempo : ", { fontFamily: "Sriracha",	fontSize: "16px", fill: "#a00"  } );	
+	Crono = new Text( "Tiempo: ", { fontFamily: "Sriracha", fontSize: "16px", fill: "#a00"  } );	
 	Crono.position.set(400, 10 );
 	EscenaDeJuego.addChild(Crono);
-
 
 	// creacion de los sprites draggables para cada nro
 	for ( i = 1; i < 10; i++)
@@ -477,7 +464,6 @@ function Menu() {
 	BotonAtras.visible = true;
 
 	state = Menu;
-	//	state = "";
 }
 
 function Ayuda() {
@@ -522,7 +508,6 @@ function HaceBotones() {
 	BotonAtras.scale.set(0.7);
 	//	Add the button to the EscenarioGral
 	EscenarioGral.addChild(BotonAtras);
-
 
 	//	-------------------------------------------------------------	//	Preparacion del boton jugar
 	BotonTexture = PIXI.utils.TextureCache["botonjugarup.png"];
@@ -627,7 +612,6 @@ function onDragEnd()
     if (this.dragging)
     {
         var newPosition = this.data.getLocalPosition(this.parent);
-
 		//	Estamos en el tablero o afuera?
 		if ( newPosition.x < 0 || newPosition.x > LIMITE_TABLERO || newPosition.y < 0 || newPosition.y > LIMITE_TABLERO )
 		{
@@ -637,16 +621,13 @@ function onDragEnd()
 		} else { 
 			nVertice = Math.floor( newPosition.x / gridstep ) + 3 * Math.floor( newPosition.y / gridstep ) 
 			//	Ahora distinguir si nVertice está libre u ocupado
-			if (aVertices[nVertice][2] === "" )
-			{
+			if (aVertices[nVertice][2] === "" )	{            
 				lNumOK = true;
-
 				//	voy a ustilizar la posición del vertice 'almacenada' en el mismo
 				newPosition.x = aVPos[nVertice][0];
 				newPosition.y = aVPos[nVertice][1];	
-				//	y amrco al vertice como ocupado
+				//	y marco al vertice como ocupado
 				aVertices[nVertice][2] = this.val;
-
 			} else {
 				lNumOK = false;
 			}
@@ -658,15 +639,11 @@ function onDragEnd()
 			newPosition.x = LIMITE_TABLERO + 50 + ( 2 - ( 2 + this.val )  % 3 ) * 60 ;
 			newPosition.y = this.val * 50 ;
 		}
-
 		this.position.x = newPosition.x;
         this.position.y = newPosition.y;
     }
-
 	this.alpha = 1;
-
     this.dragging = false;
-
     // set the interaction data to null
     this.data = null;
 }
@@ -830,7 +807,6 @@ function PantallaSobre() {
 		'Web: ingverger.com.ar\n' +
 		'\n' , { fontFamily: "Sriracha",	fontSize: "32px", fill: "0xffffcc"  } );
 
-	//	'Se dan como ayuda los valores de dos vértices.', style);
 	richText.x = 60;
 	richText.y = 60;
 	EscenaSobre.addChild(richText);

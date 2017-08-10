@@ -85,6 +85,9 @@ A mayor cantidad de círculos, mayor dificultad.
 
 Esta es la primer implementación del juego que, originalmente, fueplaneado para ser resuelto con lápiz y papel.
 
+### Parecidos
+Este entretenimiento algunas características del SU-DO-KU y las pirámides numéricas. Por la dificultad para resolver es más simple que el primero y más complicado de resolver que las últimas. 
+
 ### Grado de dificultad
 El grado de dificultad del juego queda fijado por la cantidad de círculos; 
 
