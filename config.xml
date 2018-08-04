@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     id          = "ar.com.ingverger.sumado"
-    versionCode = "10"
+    versionCode = "20"
     version     = "1.1.0" >
 
 	<!-- versionCode is optional and Android only -->
