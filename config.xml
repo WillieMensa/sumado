@@ -22,7 +22,8 @@
   <platform name="android" />
   <icon src="icon.png" />
   <splash src="splash.png" />
-
+	<preference name='phonegap-version' value='cli-8.0.0' />	
+	
     <platform name="android">
         <icon   src="res/icon/android/drawable-ldpi-icon.png"               density="ldpi" />
         <icon   src="res/icon/android/drawable-mdpi-icon.png"               density="mdpi" />
