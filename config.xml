@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     id          = "ar.com.ingverger.sumado"
-    versionCode = "11"
-    version     = "1.5.1" >
-
-	<!-- versionCode is optional and Android only -->
+    version     = "1.4.1" >
 
   <name>SUMADO</name>
 
@@ -18,16 +15,14 @@
 	The object of the game is to deduce the values assigned to each circle. Some of these numbers are given as help. 
   </description>
 
-	<author href="http://www.ingverger.com.ar/sumado.php" email="ingverger@gmail.com">
-		Guillermo Verger
-	</author>
+  <author href="http://www.ingverger.com.ar/sumado.php" email="ingverger@gmail.com">
+      Guillermo Verger
+  </author>
 
-	<preference name='phonegap-version' value='cli-8.0.0' />
-	<gap:plugin name="phonegap-admob" source="npm"/>
+  <platform name="android" />
+  <icon src="icon.png" />
+  <splash src="splash.png" />
 
-	<platform name="android" />
-	<icon src="icon.png" />
-	
     <platform name="android">
         <icon   src="res/icon/android/drawable-ldpi-icon.png"               density="ldpi" />
         <icon   src="res/icon/android/drawable-mdpi-icon.png"               density="mdpi" />

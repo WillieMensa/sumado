@@ -25,43 +25,9 @@
 		@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 	}
 	</style>
-
-	<!-- anuncios-automaticos.shtml -->
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-		 (adsbygoogle = window.adsbygoogle || []).push({
-			  google_ad_client: "ca-pub-3940256099942544",
-			  enable_page_level_ads: true
-		 });
-	</script>
-
 </head>
 <body>
-
-<script>
-    
-    function onDeviceReady() {
-      document.removeEventListener('deviceready', onDeviceReady, false);
-      
-      // Set AdMobAds options:
-      admob.setOptions({
-        publisherId:          "ca-app-pub-3940256099942544/6300978111",  // Required
-        interstitialAdId:     "ca-app-pub-3940256099942544/6300978111"  // Optional
-      });
-      
-      // Start showing banners (atomatic when autoShowBanner is set to true)
-      admob.createBannerView();
-      
-      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
-      admob.requestInterstitialAd();
-    }
-    
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-</script>
-
 	<script src="pixi.min.js"></script>
 	<script src="sumado.js"></script>
 </body>
-
 </html>
