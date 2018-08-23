@@ -1,7 +1,7 @@
 # SUMADO. A logic game.
 by Willie Verger
 
-## Based in Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
+Based in Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
 
 ## Description
 SUMADO is a logic game. It's an opportunity for mental exercise and fun at the same time.
