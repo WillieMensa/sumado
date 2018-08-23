@@ -16,7 +16,7 @@ var	LIMITE_TABLERO = 450,
 	RENDERER_H = 680,
 	FONDO_AYUDA = 0x008cff,
 	FONDO_JUEGO = "0xffffff",
-	VERSION	= "1.3.0",
+	VERSION	= "1.5.1",
 	DEBUG = false;
 	//	DEBUG = true;
 
