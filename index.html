@@ -25,9 +25,34 @@
 		@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
 	}
 	</style>
+
 </head>
 <body>
+
+<script>
+    
+    function onDeviceReady() {
+      document.removeEventListener('deviceready', onDeviceReady, false);
+      
+      // Set AdMobAds options:
+      admob.setOptions({
+        publisherId:          "ca-app-pub-3940256099942544/6300978111",  // Required
+        interstitialAdId:     "ca-app-pub-3940256099942544/6300978111"  // Optional
+      });
+      
+      // Start showing banners (atomatic when autoShowBanner is set to true)
+      admob.createBannerView();
+      
+      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
+      admob.requestInterstitialAd();
+    }
+    
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+</script>
+
 	<script src="pixi.min.js"></script>
 	<script src="sumado.js"></script>
 </body>
+
 </html>
