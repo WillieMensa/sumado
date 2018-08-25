@@ -5,7 +5,7 @@
 	versionCode = "11"
     version     = "1.5.1" >
 
-	<!-- versionCode is optional and Android only -->
+  <!-- versionCode is optional and Android only -->
 
   <name>SUMADO</name>
 
@@ -26,7 +26,6 @@
 	<!-- <preference name='phonegap-version' value='cli-8.0.0' /> -->
 	<!-- <gap:plugin name="phonegap-admob" source="npm"/> -->
     <gap:plugin name="phonegap-admob" source="npm" />
-
 
 	<platform name="android" />
 	<icon src="icon.png" />
