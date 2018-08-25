@@ -23,7 +23,7 @@
 	</author>
 
 	<preference name='phonegap-version' value='cli-8.0.0' />
-	<gap:plugin name="phonegap-admob" source="npm"/>
+	<!-- <gap:plugin name="phonegap-admob" source="npm"/> -->
 
 	<platform name="android" />
 	<icon src="icon.png" />
