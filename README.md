@@ -1,8 +1,6 @@
 # SUMADO. A logic game.
 by Willie Verger
 
-Based in Hello World PhoneGap Template [![bitHound Score][bithound-img]][bithound-url]
-
 ## Description
 SUMADO is a logic game. It's an opportunity for mental exercise and fun at the same time.
 
@@ -106,15 +104,14 @@ Permite afianzar conocimientos de matemática básica y agilizar la mente de quien
 
 Clasificación de la aplicación: para todos los públicos.
 
-Tu video saldrá en directo en: https://youtu.be/8RfLuiR2PW0
-https://youtu.be/8RfLuiR2PW0
+Video en: https://youtu.be/8RfLuiR2PW0
 
 App ID
 2706674
-Version
-n_a
-Owned by
-ingverger@gmail.com
+Version n_a
+
+Owned by ingverger@gmail.com
+
 PhoneGap (iOS / Android / Windows)
 cli-6.5.0 (4.3.1 / 6.1.2 / 4.4.3)
 
