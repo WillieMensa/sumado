@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
 	xmlns:gap="http://phonegap.com/ns/1.0"
-    id          = "ar.com.ingverger.sumado"
+	id       = "ar.com.ingverger.sumado"
 	versionCode = "12"
-    version     = "1.7.1" >
+	version     = "1.7.1" >
 
   <!-- versionCode is optional and Android only -->
 
@@ -23,8 +23,9 @@
 		Guillermo Verger
 	</author>
 
-<!-- 
 	<preference name='phonegap-version' value='cli-8.0.0' />
+    
+<--
     <gap:plugin name="phonegap-admob" source="npm" />
     <preference name="permissions" value="none"/>
     <preference name="android-build-tool" value="gradle" />
