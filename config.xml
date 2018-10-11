@@ -18,15 +18,10 @@
 		Guillermo Verger
 	</author>
 
-	<preference name='phonegap-version' value='cli-8.0.0' />
-    
-<--
-    <gap:plugin name="phonegap-admob" source="npm" />
-    <preference name="permissions" value="none"/>
-    <preference name="android-build-tool" value="gradle" />
- -->
 
-	<uses-sdk android:minSdkVersion="21"	android:targetSdkVersion="26" />
+	<manifest>
+		<uses-sdk android:minSdkVersion="21"	android:targetSdkVersion="26" />
+	</manifest>
 
 	<platform name="android">
 		<icon	src="icon.png" />
@@ -50,7 +45,6 @@
         <splash src="res/screen/android/drawable-port-xxxhdpi-screen.png"   density="port-xxxhdpi" />
 
     </platform>
-
 
     <preference name="orientation"	value="landscape" />        <!-- all: default means both landscape and portrait are enabled -->
 
