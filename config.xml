@@ -19,7 +19,8 @@
 	</author>
 
 	<preference name='phonegap-version' value='cli-8.0.0' />
-<!-- 
+    
+<--
     <gap:plugin name="phonegap-admob" source="npm" />
     <preference name="permissions" value="none"/>
     <preference name="android-build-tool" value="gradle" />
