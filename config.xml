@@ -1,13 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.w3.org/ns/widgets"
-	xmlns:gap="http://phonegap.com/ns/1.0"
+<widget
     id          = "ar.com.ingverger.sumado"
-	versionCode = "12"
     version     = "1.7.1" >
 
-  <!-- versionCode is optional and Android only -->
-
-  <name>SUMADO</name>
+	<name>SUMADO</name>
 
   <description>
 	SUMADO is a logic game. It is an opportunity for mental exercise and fun at the same time.
@@ -23,8 +18,8 @@
 		Guillermo Verger
 	</author>
 
-<!-- 
 	<preference name='phonegap-version' value='cli-8.0.0' />
+<!-- 
     <gap:plugin name="phonegap-admob" source="npm" />
     <preference name="permissions" value="none"/>
     <preference name="android-build-tool" value="gradle" />
@@ -55,5 +50,9 @@
 
     </platform>
 
+
+    <preference name="orientation"	value="landscape" />        <!-- all: default means both landscape and portrait are enabled -->
+
+	<content src="index.html" />
 
 </widget>
