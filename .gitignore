@@ -8,6 +8,7 @@ npm-debug.log
 
 # project ignores
 !.gitkeep
+.privado
 *__temp
 node_modules
 docs/

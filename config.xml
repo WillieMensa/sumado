@@ -1,6 +1,9 @@
 <widget
+	xmlns   = "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
     id          = "ar.com.ingverger.sumado"
-    version     = "1.7.1" >
+	versionCode = "10702"
+    version     = "1.7.2" >
 
 	<name>SUMADO</name>
 
@@ -18,10 +21,8 @@
 		Guillermo Verger
 	</author>
 
-
-	<manifest>
-		<uses-sdk minSdkVersion="21"	targetSdkVersion="26" />
-	</manifest>
+	<preference name="android-minSdkVersion"  value="16" />
+	<preference name="android-targetSdkVersion"  value="26" /> 
 
 	<platform name="android">
 		<icon	src="icon.png" />

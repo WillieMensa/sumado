@@ -119,5 +119,5 @@ Vinculo para habilitar la versión con los verificadores.
 https://play.google.com/store/apps/details?id=ar.com.ingverger.sumado
 
 
-version     = "1.7.0" 10/10/2018
-
+version     = "1.7.0"	10/10/2018
+version     = "1.7.2"	11/10/2018
