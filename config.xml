@@ -2,8 +2,8 @@
 	xmlns   = "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
     id          = "ar.com.ingverger.sumado"
-	versionCode = "10702"
-    version     = "1.7.2" >
+	versionCode = "10703"
+    version     = "1.7.3" >
 
 	<name>SUMADO</name>
 
