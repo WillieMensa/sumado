@@ -2,8 +2,8 @@
 	xmlns   = "http://www.w3.org/ns/widgets"
 	xmlns:gap	= "http://phonegap.com/ns/1.0"
     id          = "ar.com.ingverger.sumado"
-	versionCode = "10702"
-    version     = "1.7.2" >
+	versionCode = "10705"
+    version     = "1.7.5" >
 
 	<name>SUMADO</name>
 
@@ -21,7 +21,7 @@
 		Guillermo Verger
 	</author>
 
-	<preference name="android-minSdkVersion"  value="16" />
+	<!-- <preference name="android-minSdkVersion"  value="16" /> -->
 	<preference name="android-targetSdkVersion"  value="26" /> 
 
 	<platform name="android">
@@ -50,5 +50,7 @@
     <preference name="orientation"	value="landscape" />        <!-- all: default means both landscape and portrait are enabled -->
 
 	<content src="index.html" />
+
+	<uses-feature android:name="android.hardware.telephony" android:required="false" />
 
 </widget>

@@ -121,3 +121,27 @@ https://play.google.com/store/apps/details?id=ar.com.ingverger.sumado
 
 version     = "1.7.0"	10/10/2018
 version     = "1.7.2"	11/10/2018
+	Versión preparada para mostrarse en una pantallla apaisada (horizontal) y orientada fundamentalmente a la API 26 de Android.
+	Comento minsdkVersion para ampliar compatibilidad <!-- <preference name="android-minSdkVersion"  value="16" /> -->
+	Ojo! Esto ultimo lo hago directamente en github
+
+version     = "1.7.3"	12/10/2018
+	Adecuacion a tablets
+
+version     = "1.7.4"	12/10/2018
+
+version     = "1.7.5"	12/10/2018
+	Dimensines de pantalla, fijas (1000 x 600) y redimensionable (pixi)
+	Adecuacion a tablets
+
+	
+	Incorporo mensajes en diferentes idiomas. Detectar los mensajes, colocarlos en 
+		variables y asignarles valor segun sea el idioma del usuario.
+
+
+Faltaría una 
+- invitacion a comentar el juego
+- indicacion de ayudas mas completas para jugar
+- mejorar la distribucion de imagenes en la pantalla. Calculos proporcionales a la medida de la pantalla
+
+

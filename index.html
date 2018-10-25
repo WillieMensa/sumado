@@ -11,19 +11,13 @@
          actually report correct screen dimensions -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 
-	<meta http-equiv="content-type" content="text/html; meta charset="UTF-8" >
+	<meta meta charset="UTF-8" >
 
 	<title> SU-MA-DO </title>
 
-	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Delius|Sriracha|Luckiest+Guy">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sriracha">
 
-	<link rel="manifest" href="manifest.json">
-	<link href='https://fonts.googleapis.com/css?family=Luckiest+Guy' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Sriracha' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
-
-	<!-- Remove spacing around page contents, i.e., the game, and make
-         the background pink and canvas black for debugging purposes -->
+	<!-- <link rel="manifest" href="manifest.json"> -->
 
 	<style>
 		body {
@@ -35,50 +29,20 @@
 		}
 
 		canvas { background-color: #fff; }
-		@import url('https://fonts.googleapis.com/css?family=Delius');
 		@import url('https://fonts.googleapis.com/css?family=Sriracha');
-		@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+		<!-- p { font-family: 'Sriracha';   text-align: right; } -->
+		p { font-family: 'Sriracha';   }
 	}
 
 	</style>
-
-	<!-- anuncios-automaticos.shtml -->
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script>
-		 (adsbygoogle = window.adsbygoogle || []).push({
-			  google_ad_client: "ca-pub-3940256099942544",
-			  enable_page_level_ads: true
-		 });
-	</script>
 
 </head>
 
 <body>
 
-<script>
-    
-    function onDeviceReady() {
-      document.removeEventListener('deviceready', onDeviceReady, false);
-      
-      // Set AdMobAds options:
-      admob.setOptions({
-        publisherId:          "ca-app-pub-3940256099942544/6300978111",  // Required
-        interstitialAdId:     "ca-app-pub-3940256099942544/6300978111"  // Optional
-      });
-      
-      // Start showing banners (atomatic when autoShowBanner is set to true)
-      admob.createBannerView();
-      
-      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
-      admob.requestInterstitialAd();
-    }
-    
-    document.addEventListener("deviceready", onDeviceReady, false);
-
-</script>
-
 	<script src="pixi.min.js"></script>
 	<script src="sumado.js"></script>
+
 </body>
 
 </html>
