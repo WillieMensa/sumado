@@ -133,6 +133,7 @@ version     = "1.7.4"	12/10/2018
 version     = "1.7.5"	12/10/2018
 	Dimensines de pantalla, fijas (1000 x 600) y redimensionable (pixi)
 	Adecuacion a tablets
+	Correción textos con acentos
 
 	
 	Incorporo mensajes en diferentes idiomas. Detectar los mensajes, colocarlos en 

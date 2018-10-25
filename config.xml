@@ -21,7 +21,6 @@
 		Guillermo Verger
 	</author>
 
-	<!-- <preference name="android-minSdkVersion"  value="16" /> -->
 	<preference name="android-targetSdkVersion"  value="26" /> 
 
 	<platform name="android">
